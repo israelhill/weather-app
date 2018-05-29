@@ -1,0 +1,19 @@
+{
+  "name": "weather-app",
+  "version": "0.1.0",
+  "scripts": {
+    "client": "cd client && npm start",
+    "server": "node server/server.js",
+    "job": "node server/scripts/newsLetterJob.js"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "knex": "^0.14.6",
+    "mysql": "^2.15.0",
+    "nodemailer": "^4.6.5",
+    "react-router": "^4.2.0"
+  }
+}
