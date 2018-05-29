@@ -1,5 +1,5 @@
 const fs = require('fs');
-const {cities} = require('../client/src/cities');
+const {cities} = require('../../client/src/data/cities');
 let avgTemps = {};
 
 /**
@@ -16,7 +16,7 @@ function randomTemp() {
  * @param {Object} data 
  */
 function writeDataToFile(data) {
-    const FILE = './average_temps.json';
+    const FILE = '../data/average_temps.json';
     fs.writeFile(FILE, data, (error) => {
         if(error) {
             console.log(error);
