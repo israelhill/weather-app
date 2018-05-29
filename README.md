@@ -7,7 +7,7 @@ to send emails. You will need to enable 'Less Secure Apps' on your gmail account
 I also left my openweatherapi API Key as a hard coded value (Edit: removed hardcoded value since emailing executables is blocked by gmail and I have to post the code on github) so that you do not have to request a new key. If you do decide to request your own key, you can pass it as an env variable: `API_KEY=your_key` when starting the express server (Provided Matt with key). With a little more work, these env variables could be stored in a .env file, but since there are only at max 4, I decided this was not neccessary.
 
 
-# INSTALLATION
+# Installation
 **Install Node dependencies:**
 
 1. Install NodeJS (v7+). Many ways to do this: download online, install using homebrew, etc
@@ -45,7 +45,7 @@ I also left my openweatherapi API Key as a hard coded value (Edit: removed hardc
 Now that all dependencies are installed and the database has been created, we can run the app.
 
 
-# RUN
+# Run
 To run the application you need to start 2 servers:
     1. the local dev server to serve the the web page
     2. the local express server that hosts the REST endpoints and talks to the database.
@@ -61,7 +61,7 @@ To run the application you need to start 2 servers:
         a third env variable to this command called DB_PSWD.
 
 
-# RUN NEWSLETTER JOB
+# Run Newsletter Job
 To run the newletter job:
 
 `$ EMAIL=email EMAIL_PSWD=email_pswd API_KEY=api_key npm run job`
